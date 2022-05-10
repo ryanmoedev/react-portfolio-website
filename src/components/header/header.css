@@ -1,0 +1,87 @@
+header {
+  padding-top: 12rem;
+  /* overflow; */
+  background-image: linear-gradient(#000000a8, #00000000);
+  margin-bottom: 11rem;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.header__container h1 {
+  font-size: 3.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.header__container h5 {
+  font-size: 1rem;
+}
+
+/* ===== Actions ===== */
+
+.actions {
+  margin-top: 5.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* ===== Socials ===== */
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+.socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+.large-icon {
+  color: var(--color-primary);
+  position: absolute;
+  font-size: 30rem;
+  z-index: 0;
+  line-height: 0;
+  right: 0;
+}
+
+.spin {
+  animation: spin 10s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}
+
+/* ===== MEDIA QUERIES (MEDIUM DEVICES) ===== */
+@media screen and (max-width: 1024px) {
+  .large-icon {
+    font-size: 20rem;
+  }
+}
+
+/* ===== MEDIA QUERIES (SMALL DEVICES) ===== */
+@media screen and (max-width: 600px) {
+  .socials {
+    display: none;
+  }
+  .large-icon {
+    display: none;
+  }
+}
