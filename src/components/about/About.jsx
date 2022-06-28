@@ -36,9 +36,9 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio blanditiis nihil qui libero vitae,
-            dignissimos iusto saepe recusandae a consequuntur debitis nisi quis veritatis magni facilis doloribus
-            voluptate voluptatem! Commodi?
+            I'm a software engineer specializing in building exceptional products and platforms for the web. I am
+            currently blowing it up at Dyno Nobel, an explosives manufacturer, with a platform for modeling and
+            recording literal explosions.
           </p>
 
           <a href="#contact" className="btn btn-primary">
